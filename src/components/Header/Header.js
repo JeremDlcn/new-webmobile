@@ -15,9 +15,6 @@ function Header(props) {
                     <Link to="/">Accueil</Link>
                 </li>
                 <li className="header-nav-item">
-                    <Link to="/sports">Sports</Link>
-                </li>
-                <li className="header-nav-item">
                     <Link to="/history">Histoire</Link>
                 </li>
             </ul>
