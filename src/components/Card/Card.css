@@ -1,0 +1,25 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-year,
+.card-content {
+    background-color: white;
+    transform: scaleX(16deg);
+}
+
+.card-year p ,
+.card-title {
+    font-size: 2rem;
+    transform: skewX(-16deg)
+}
+
+.card-image {
+    border-radius: 50%;
+}
+
+.card-image img {
+    object-fit: cover;
+}
