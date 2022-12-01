@@ -1,18 +1,25 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header/Header';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 
+const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Home />,
+    },
+    {
+      path: '/sports',
+      element: <Sports />,
+    },
+    {
+      path: '/history',
+      element: <History/>,
+    },
+]);
 
-function App() {
-  return (
-    <div className="App">
-      <Router>
-        <Header />
-      </Router>
-    </div>
-  );
-}
+const App = () => {
+  return <RouterProvider router={router} />;
+};
 
 export default App;
