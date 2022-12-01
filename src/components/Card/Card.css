@@ -1,25 +1,52 @@
 .card {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    transform: skewX(-16deg);
+    width: min-content;
+    padding: 2rem;
 }
+
 .card-year,
 .card-content {
     background-color: white;
-    transform: scaleX(16deg);
+    transform: skewX(-16deg);
 }
 
-.card-year p ,
+.card-year p,
 .card-title {
     font-size: 2rem;
-    transform: skewX(-16deg)
+    transform: skewX(16deg);
+    margin: 0.5rem 1rem;
 }
+
+.card-year {
+    transform: skewX(-16deg) translateX(2rem);
+}
+
+.card-content {
+    transform: skewX(-16deg) translateX(-2rem);
+}
+
 
 .card-image {
     border-radius: 50%;
+    margin: 2rem 0;
 }
 
 .card-image img {
     object-fit: cover;
+}
+
+.card-link {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: skewX(16deg);
+}
+
+.card-bg {
+    background-color: salmon;
+
 }

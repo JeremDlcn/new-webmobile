@@ -5,8 +5,8 @@ import './Card.css';
 
 function Header(props) {
     return (
-        <div className="card">
-            <Link to={props.link}>
+        <div className="card card-bg">
+            <Link to={props.link} className="card-link">
                 <div className="card-year">
                     <p>{props.year}</p>
                 </div>
