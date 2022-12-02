@@ -9,6 +9,7 @@
     background-color: transparent;
     transform: skewX(-16deg);
     margin: 0 0.5rem;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .tabs-list-item p {
@@ -17,4 +18,9 @@
 
 .tabs-list-item.active {
     background-color: white;
+    color: black;
+}
+.tabs-list-item:hover {
+    background-color: white;
+    color: black;
 }
