@@ -1,0 +1,30 @@
+.small {
+    display: flex;
+    transform: skewX(-16deg);
+    width: min-content;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.small-image {
+    background-color: #d4d4d4;
+    width: 8rem;
+    height: 8rem;
+}
+
+.small-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: skewX(16deg);
+    padding: 1rem;
+}
+
+.small-desc {
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+.small-desc > * {
+    transform: skewX(16deg);
+}

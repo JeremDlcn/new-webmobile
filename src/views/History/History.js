@@ -1,4 +1,3 @@
-import * as react from 'react';
 import './History.css';
 import Header from '../../components/Header/Header';
 import Card from '../../components/Card/Card';

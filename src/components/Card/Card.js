@@ -1,10 +1,8 @@
-import * as react from 'react';
 import { Link } from 'react-router-dom';
 import './Card.css';
 
 
-function Header(props) {
-    //props.backgrouns is the path to the background image
+function Card(props) {
     const style = {
         backgroundImage: `url(${props.background})`,
     }
@@ -26,4 +24,4 @@ function Header(props) {
     );
 };
 
-export default Header;
+export default Card;
