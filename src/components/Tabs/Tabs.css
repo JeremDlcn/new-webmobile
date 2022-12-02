@@ -1,0 +1,20 @@
+.tabs-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.tabs-list-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    transform: skewX(-16deg);
+    margin: 0 0.5rem;
+}
+
+.tabs-list-item p {
+    transform: skewX(16deg);
+}
+
+.tabs-list-item.active {
+    background-color: white;
+}

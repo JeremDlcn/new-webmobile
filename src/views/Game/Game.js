@@ -2,6 +2,7 @@ import './Game.css';
 import Header from '../../components/Header/Header';
 import SmallCard from '../../components/SmallCard/SmallCard';
 import { useParams } from 'react-router-dom';
+import Tabs from '../../components/Tabs/Tabs';
 
 const importAll = (r) => {
     return r.keys().map(r);
@@ -21,7 +22,7 @@ const Game = () => {
                     title={'Tokyo'}
                     year={id}
                 />
-                
+                <Tabs></Tabs>
             </div>
         </div>
     )
