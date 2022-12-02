@@ -3,6 +3,7 @@
     transform: skewX(-16deg);
     width: min-content;
     padding: 2rem;
+    cursor: pointer;
 }
 
 .card-year,
@@ -48,4 +49,12 @@
 
 .card-bg {
     background-color: rgb(212, 212, 212);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.2s ease-in-out;
+}
+.card-bg:hover {
+    transform: skewX(-16deg) scale(1.1);
+    z-index: 9;
 }
