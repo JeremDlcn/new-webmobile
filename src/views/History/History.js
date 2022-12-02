@@ -33,11 +33,13 @@ const events = [
     },
     
 ];
+const img = images.filter((img) => {return img.includes("logo");}); //get logos
+
 const Events =  events.map((event) => {
     return (
         <Card
         year={event.year}
-        image={images[events.indexOf(event)]}
+        image={img[events.indexOf(event)]}              
         title={event.title}
         link={event.link}
         key={event.year.toString()}
