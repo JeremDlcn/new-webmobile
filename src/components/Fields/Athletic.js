@@ -1,3 +1,4 @@
+import './Fields.css';
 const Athletic = () => {
     return (
         <div className="athletic">

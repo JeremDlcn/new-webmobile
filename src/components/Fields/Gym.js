@@ -1,7 +1,11 @@
+import './Fields.css';
 const Gym = () => {
     return (
         <div className="gym">
-            <p>Terrain de Gymnastique</p>
+            <h1>Gymnastique</h1>
+            <div className="gym-field">
+
+            </div>
         </div>
     );
 }

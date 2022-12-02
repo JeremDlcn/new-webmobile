@@ -1,3 +1,4 @@
+import './Fields.css';
 const Pool = () => {
     return (
         <div className="pool">

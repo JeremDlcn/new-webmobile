@@ -1,0 +1,10 @@
+.gym {
+    height: 100%;
+}
+.gym-field {
+    border: 30px solid red;
+    background-color: #FBEFD7;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+}
