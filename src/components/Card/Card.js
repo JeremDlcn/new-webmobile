@@ -4,8 +4,19 @@ import './Card.css';
 
 
 function Header(props) {
+    //props.backgrouns is the path to the background image
+    const style = {
+        backgroundImage: `url(${props.background})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        height: '100%',
+        width: '100%',
+        zIndex: '-1',
+    }
+
     return (
-        <div className="card card-bg">
+        <div className="card card-bg" style={style}>
             <Link to={props.link} className="card-link">
                 <div className="card-year">
                     <p>{props.year}</p>

@@ -34,6 +34,7 @@ const events = [
     
 ];
 const img = images.filter((img) => {return img.includes("logo");}); //get logos
+const bgs = images.filter((img) => {return img.includes("background");}); //get backgrounds
 
 const Events =  events.map((event) => {
     return (
@@ -42,6 +43,7 @@ const Events =  events.map((event) => {
         image={img[events.indexOf(event)]}              
         title={event.title}
         link={event.link}
+        background={bgs[events.indexOf(event)]}
         key={event.year.toString()}
      />
     )
