@@ -14,22 +14,22 @@ const events = [
     {
         year: "2012",
         title: "Londres",
-        link: "/history/2012"
+        link: "/game/2012"
     },
     {
         year: "2016",
         title: "Rio",
-        link: "/history/2016"
+        link: "/game/2016"
     },
     {
         year: "2020",
         title: "Tokyo",
-        link: "/history/2020"
+        link: "/game/2020"
     },
     {
         year: "2024",
         title: "Paris",
-        link: "/history/2024"
+        link: "/game/2024"
     },
     
 ];
