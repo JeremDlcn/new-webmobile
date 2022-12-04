@@ -1,0 +1,14 @@
+.flag {
+    margin: 0 4rem;
+}
+.flag-item {
+    display: flex;
+    height: 8rem;
+    width: auto;
+}
+
+.flag-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
