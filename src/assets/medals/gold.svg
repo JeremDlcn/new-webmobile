@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="133" height="133" viewBox="0 0 133 133">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffd49c"/>
+      <stop offset="0.653" stop-color="#ffce8e"/>
+      <stop offset="1" stop-color="#ffab3b"/>
+    </radialGradient>
+    <filter id="_1" x="42.5" y="2.5" width="43" height="117" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-color="#f9a83d" flood-opacity="0.878"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_51" data-name="Groupe 51" transform="translate(-2309 -5848)">
+    <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(2309 5848)" stroke="#ffae43" stroke-width="7" fill="url(#radial-gradient)">
+      <circle cx="66.5" cy="66.5" r="66.5" stroke="none"/>
+      <circle cx="66.5" cy="66.5" r="63" fill="none"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 2309, 5848)" filter="url(#_1)">
+      <text id="_1-2" data-name="1" transform="translate(43 95)" fill="#ffae43" font-size="80" font-family="Gordita-Bold, Gordita" font-weight="700"><tspan x="0" y="0">1</tspan></text>
+    </g>
+  </g>
+</svg>

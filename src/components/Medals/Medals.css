@@ -1,0 +1,19 @@
+.medals {
+    display: flex;
+    padding: 2rem;
+}
+
+.medals-item {
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+}
+.medals-item > img {
+    width: 8rem;
+    height: 8rem;
+}
+.medals-number {
+    font-size: 5rem;
+    margin: 0 2rem;
+    font-weight: bold;
+}
