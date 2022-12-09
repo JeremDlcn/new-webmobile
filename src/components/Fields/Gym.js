@@ -8,6 +8,7 @@ const Gym = () => {
             <h1>Gymnastique</h1>
             <ul className="field gym-field">
                 <li className="field-item">
+                    <div className="position"><span className="position-text">1</span></div>
                     <Flag country="France" />
                     <Medals
                         gold="1"
@@ -16,6 +17,7 @@ const Gym = () => {
                     />
                 </li>
                 <li className="field-item">
+                    <div className="position"><span className="position-text">2</span></div>
                     <Flag country="Japon" />
                     <Medals
                         gold="2"
@@ -24,6 +26,7 @@ const Gym = () => {
                     />
                 </li>
                 <li className="field-item">
+                    <div className="position"><span className="position-text">3</span></div>
                     <Flag country="Italie" />
                     <Medals
                         gold="1"

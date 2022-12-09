@@ -17,3 +17,8 @@
     margin: 0 2rem;
     font-weight: bold;
 }
+
+/* Specials */
+.athletic-field .medals-number {
+    color: #ffffff;
+}

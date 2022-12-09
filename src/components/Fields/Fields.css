@@ -6,8 +6,33 @@
 
 .field-item {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 2rem;
+    padding: 1rem 4rem;
+    z-index: 3;
+    position: relative;
+}
+
+.position {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 8px solid black;
+    transform: skewX(-16deg);
+    padding: 0 1rem;
+}
+.position-text {
+    font-size: 3rem;
+    font-weight: bold;
+    transform: skewX(16deg);
+    display: block;
+}
+
+.gym h1,
+.pool h1,
+.athletic h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
 }
 
 /* Gym properties */
@@ -20,4 +45,86 @@
     width: 100%;
     height: 100%;
     border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+/* Pool properties */
+.pool {
+    height: 100%;
+}
+.pool-field {
+    background-color: #59afcf;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.pool-field::after {
+    content: '';
+    background: url('../../assets/pattern-pool.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.pool-field .field-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 1rem;
+    background-color: black;
+}
+.pool-field .field-item::before {
+    content: '';
+    position: absolute;
+    bottom: -2.5rem;
+    left: 90%;
+    width: 2rem;
+    height: 6rem;
+    background-color: black;
+}
+
+/* Athletic properties */
+.athletic {
+    height: 100%;
+}
+.athletic-field {
+    background-color: #ce7458;
+    width: 100%;
+    height: 100%;
+}
+
+.athletic-field .field-item {
+    border-bottom: .7rem solid white;
+
+}
+
+
+.athletic-field .position::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -4rem;
+    width: .7rem;
+    height: 100%;
+    background: white;
+}
+
+
+/* reset properties */
+
+.pool-field .position,
+.athletic-field .position {
+    transform: skewX(0);
+    border: none;
+    background: transparent;
+}
+.pool-field .position-text,
+.athletic-field .position-text {
+    transform: skewX(0);
+    color: white;
+    font-size: 6rem;
 }

@@ -14,6 +14,7 @@ const Pool = () => {
                         silver="0"
                         bronze="3"
                     />
+                    <div className="position"><span className="position-text">1</span></div>
                 </li>
                 <li className="field-item">
                     <Flag country="Japon" />
@@ -22,6 +23,7 @@ const Pool = () => {
                         silver="1"
                         bronze="0"
                     />
+                    <div className="position"><span className="position-text">2</span></div>
                 </li>
                 <li className="field-item">
                     <Flag country="Italie" />
@@ -30,6 +32,7 @@ const Pool = () => {
                         silver="2"
                         bronze="1"
                     />
+                    <div className="position"><span className="position-text">3</span></div>
                 </li>
             </ul>
         </div>
