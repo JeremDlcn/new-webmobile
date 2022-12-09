@@ -13,12 +13,15 @@
     position: relative;
 }
 
+
+
 .position {
     background-color: rgba(255, 255, 255, 0.2);
     border: 8px solid black;
     transform: skewX(-16deg);
     padding: 0 1rem;
 }
+
 .position-text {
     font-size: 3rem;
     font-weight: bold;
@@ -33,12 +36,14 @@
     font-weight: bold;
     margin-left: 2rem;
     margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 /* Gym properties */
 .gym {
     height: 100%;
 }
+
 .gym-field {
     border: 30px solid red;
     background-color: #FBEFD7;
@@ -52,12 +57,14 @@
 .pool {
     height: 100%;
 }
+
 .pool-field {
     background-color: #59afcf;
     width: 100%;
     height: 100%;
     position: relative;
 }
+
 .pool-field::after {
     content: '';
     background: url('../../assets/pattern-pool.png');
@@ -68,6 +75,7 @@
     bottom: 0;
     z-index: 1;
 }
+
 .pool-field .field-item::after {
     content: '';
     position: absolute;
@@ -77,6 +85,7 @@
     height: 1rem;
     background-color: black;
 }
+
 .pool-field .field-item::before {
     content: '';
     position: absolute;
@@ -91,6 +100,7 @@
 .athletic {
     height: 100%;
 }
+
 .athletic-field {
     background-color: #ce7458;
     width: 100%;
@@ -122,9 +132,67 @@
     border: none;
     background: transparent;
 }
+
 .pool-field .position-text,
 .athletic-field .position-text {
     transform: skewX(0);
     color: white;
     font-size: 6rem;
+}
+
+
+
+@media (max-width: 1200px) {
+    .field-item {
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .athletic-field .position::after {
+        right: 0rem;
+        width: .5rem;
+    }
+    
+    .position {
+        border-width: 4px;
+        padding: 0 .5rem;
+    }
+    .position-text {
+        font-size: 1.5rem;
+    }
+
+    .gym h1,
+    .pool h1,
+    .athletic h1 {
+        font-size: 2rem;
+    }
+
+    .pool-field .position-text,
+    .athletic-field .position-text {
+        transform: skewX(0);
+        color: white;
+        font-size: 3rem;
+    }
+    .pool-field .field-item::before {
+        content: '';
+        position: absolute;
+        bottom: -3.5vw;
+        left: 90%;
+        width: 2vw;
+        height: 9vw;
+        background-color: black;
+    }
+    .pool-field .field-item::after {
+        height: 2vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .position {
+        display: flex;
+        order: 1;
+    }
+    .flag,
+    .medals {
+        order: 2;
+    }
 }

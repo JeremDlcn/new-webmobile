@@ -22,3 +22,30 @@
 .athletic-field .medals-number {
     color: #ffffff;
 }
+
+@media (max-width: 1200px) {
+    .medals-item {
+        margin-right: 2rem;
+    }
+    .medals-item > img {
+        width: 4rem;
+        height: 4rem;
+    }
+    .medals-number {
+        font-size: 3rem;
+        margin: 0 1rem;
+    }
+}
+@media (max-width: 600px) {
+    .medals-item {
+        margin-right: 1rem;
+    }
+    .medals-item > img {
+        width: 2rem;
+        height: 2rem;
+    }
+    .medals-number {
+        font-size: 2rem;
+        margin: 0 0.5rem;
+    }
+}

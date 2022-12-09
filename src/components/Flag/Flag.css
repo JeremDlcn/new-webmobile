@@ -5,10 +5,24 @@
     display: flex;
     height: 8rem;
     width: auto;
+    aspect-ratio: 16 / 9;
 }
 
 .flag-item img {
     height: 100%;
     width: 100%;
     object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+    .flag {
+        margin: 0;
+        margin-right: auto;
+    }
+    .flag-item {
+        height: 10vw;
+    }
+    .flag-item img {
+        margin-left: 2rem;
+    }
 }

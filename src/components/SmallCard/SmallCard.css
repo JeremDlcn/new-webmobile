@@ -41,3 +41,27 @@
     position: relative;
     left: 1rem;
 }
+
+@media (max-width: 1200px) {
+    .small {
+        padding: 1rem;
+    }
+    .small-image {
+        width: 4rem;
+        height: 4rem;
+    }
+    .small-image img {
+        padding: 0.5rem;
+    }
+    .small-desc {
+        padding: 0.5rem 1rem;
+        padding-right: 1.5rem;
+    }
+    .small-title {
+        font-size: 1rem;
+    }
+    .small-year {
+        font-size: 0.75rem;
+        left: 0.5rem;
+    }
+}
