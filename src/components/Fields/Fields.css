@@ -1,7 +1,7 @@
 /* Global field properties */
 .field {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
 }
 
 .field-item {
@@ -47,8 +47,6 @@
 .gym-field {
     border: 30px solid red;
     background-color: #FBEFD7;
-    width: 100%;
-    height: 100%;
     border-radius: 1.5rem;
     padding: 2rem;
 }
@@ -60,8 +58,6 @@
 
 .pool-field {
     background-color: #59afcf;
-    width: 100%;
-    height: 100%;
     position: relative;
 }
 
@@ -103,8 +99,6 @@
 
 .athletic-field {
     background-color: #ce7458;
-    width: 100%;
-    height: 100%;
 }
 
 .athletic-field .field-item {
