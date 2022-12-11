@@ -29,9 +29,9 @@ function Tabs(props) {
                 <li className={activeTab === "tab3" ? "tabs-list-item active" : "tabs-list-item"} onClick={handleTab3}><p>Gymnastique</p></li>
             </ul>
             <div className="tabs-content">
-                {activeTab === "tab1" && <Athletic />}
-                {activeTab === "tab2" && <Pool />}
-                {activeTab === "tab3" && <Gym />}
+                {activeTab === "tab1" && <Athletic data={props.data.athletics} />}
+                {activeTab === "tab2" && <Pool data={props.data.swimming}/>}
+                {activeTab === "tab3" && <Gym data={props.data.gym}/>}
             </div>
         </div>
     );

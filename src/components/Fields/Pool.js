@@ -2,35 +2,35 @@ import Flag from '../Flag/Flag';
 import Medals from '../Medals/Medals';
 import './Fields.css';
 
-const Pool = () => {
+const Pool = (props) => {
     return (
         <div className="gym">
             <h1>Natation</h1>
             <ul className="field pool-field">
                 <li className="field-item">
-                    <Flag country="France" />
+                    <Flag country={props.data[0].country} />
                     <Medals
-                        gold="1"
-                        silver="0"
-                        bronze="3"
+                        gold={props.data[0].gold}
+                        silver={props.data[0].silver}
+                        bronze={props.data[0].bronze}
                     />
                     <div className="position"><span className="position-text">1</span></div>
                 </li>
                 <li className="field-item">
-                    <Flag country="Japon" />
+                    <Flag country={props.data[1].country} />
                     <Medals
-                        gold="2"
-                        silver="1"
-                        bronze="0"
+                        gold={props.data[1].gold}
+                        silver={props.data[1].silver}
+                        bronze={props.data[1].bronze}
                     />
                     <div className="position"><span className="position-text">2</span></div>
                 </li>
                 <li className="field-item">
-                    <Flag country="Italie" />
+                    <Flag country={props.data[2].country} />
                     <Medals
-                        gold="1"
-                        silver="2"
-                        bronze="1"
+                        gold={props.data[2].gold}
+                        silver={props.data[2].silver}
+                        bronze={props.data[2].bronze}
                     />
                     <div className="position"><span className="position-text">3</span></div>
                 </li>
