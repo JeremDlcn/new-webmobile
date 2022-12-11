@@ -11,6 +11,36 @@ const images = importAll(require.context('../../../src/assets/years', true, /\.(
 
 const events = [
     {
+        year: "1988",
+        title: "Séoul",
+        link: "/game/1988"
+    },
+    {
+        year: "1992",
+        title: "Barcelone",
+        link: "/game/1992"
+    },
+    {
+        year: "1996",
+        title: "Atlanta",
+        link: "/game/1996"
+    },
+    {
+        year: "2000",
+        title: "Sydney",
+        link: "/game/2000"
+    },
+    {
+        year: "2004",
+        title: "Athènes",
+        link: "/game/2004"
+    },
+    {
+        year: "2008",
+        title: "Bejing",
+        link: "/game/2008"
+    },
+    {
         year: "2012",
         title: "Londres",
         link: "/game/2012"
