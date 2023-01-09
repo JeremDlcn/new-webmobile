@@ -1,7 +1,11 @@
 import './Home.css';
 import Header from '../../components/Header/Header';
+import { useEffect } from 'react';
 
 const Home = () => {
+    useEffect(() => {
+        document.querySelector('body').classList.add('enter');
+    });
 
     return (
         <div className="home">
@@ -12,7 +16,7 @@ const Home = () => {
                 <div className="home-panel home-panel-gray"></div>
                 <div className="home-panel home-panel-white"></div>
             </div>
-            
+
         </div>
     )
 }

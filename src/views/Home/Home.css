@@ -41,7 +41,11 @@ body,
 /* Panels */
 .home-panel {
     position: absolute;
-    transform: skew(-16deg);
+    transform: skew(-16deg) translateX(20vw);
+    transition: transform .5s .2s ease-out;
+}
+.enter .home-panel {
+    transform: skew(-16deg) translateX(0);
 }
 .home-panel-gray {
     background-color: #f1f1f1;
@@ -56,6 +60,7 @@ body,
     height: 100%;
     z-index: 1;
     left: 0;
+    transition-delay: .25s;
 }
 
 @media (max-width: 600px) {
