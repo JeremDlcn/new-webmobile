@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Card.css';
+import PlaneCanvas from '../Plane/PlaneCanvas';
 
 
 function Card(props) {
@@ -14,7 +15,9 @@ function Card(props) {
                     <p>{props.year}</p>
                 </div>
                 <div className="card-image">
-                    <img src={props.image} alt={props.title} />
+                    <PlaneCanvas>
+                        <img src={props.image} alt={props.title} />
+                    </PlaneCanvas>
                 </div>
                 <div className="card-content">
                     <h2 className="card-title">{props.title}</h2>

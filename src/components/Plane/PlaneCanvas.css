@@ -1,0 +1,9 @@
+.BasicPlane {
+    height: 20rem;
+    width: 20rem;
+  }
+  
+  .BasicPlane img {
+    display: none;
+  }
+  
