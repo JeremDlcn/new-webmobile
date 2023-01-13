@@ -54,7 +54,7 @@
     background-size: cover;
     transition: 0.2s ease-in-out;
 }
-.card-bg:hover {
+.card-link:hover .card-bg {
     transform: skewX(-16deg) scale(1.1);
     z-index: 9;
 }

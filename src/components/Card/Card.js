@@ -2,27 +2,27 @@ import { Link } from 'react-router-dom';
 import './Card.css';
 import PlaneCanvas from '../Plane/PlaneCanvas';
 import { Curtains } from 'react-curtains';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function Card(props) {
+    const [isHover, setIsHover] = useState(false);
 
-    const style = {
+    const handleMouseEnter = () => {
+        setIsHover(true);
+    };
+    const handleMouseLeave = () => {
+        setIsHover(false);
+    };
+
+    const boxStyle = {
         backgroundImage: `url(${props.background})`,
-    }
-    const [styled, setStyle] = useState({ left: '0rem' });
-
-    useEffect(() => {
-      setTimeout(function () {
-        setStyle({ left: '-8rem' });
-      }, 100);
-    }, []);
-
-    
+        transform: isHover ? 'skew(-16deg) scale(1.05)' : 'skew(-16deg) scale(1)',
+    };
 
     return (
-        <div className="card card-bg" style={style}>
-            <Curtains pixelRatio={Math.min(1.5, window.devicePixelRatio)} style={styled}>
-                <Link to={props.link} className="card-link">
+        <div className="card card-bg" style={boxStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <Link to={props.link} className="card-link">
+                <Curtains pixelRatio={Math.min(1.5, window.devicePixelRatio)}>
                     <div className="card-year">
                         <p>{props.year}</p>
                     </div>
@@ -34,8 +34,8 @@ function Card(props) {
                     <div className="card-content">
                         <h2 className="card-title">{props.title}</h2>
                     </div>
-                </Link>
-            </Curtains>
+                </Curtains>
+            </Link>
         </div>
 
     );
