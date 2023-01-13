@@ -2,6 +2,7 @@ import './History.css';
 import Header from '../../components/Header/Header';
 import Card from '../../components/Card/Card';
 import events from '../../Data';
+import { useRef, useEffect } from 'react';
 
 //import all images from years folder
 const importAll = (r) => {
@@ -29,11 +30,26 @@ const Events = events.map((event) => {
 
 
 const History = () => {
+  const scrollRef = useRef();
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (el) {
+      const onWheel = e => {
+        if (e.deltaY == 0) return;
+        e.preventDefault();
+        el.scrollTo({
+          left: el.scrollLeft*2 + e.deltaY,
+          behavior: "smooth"
+        });
+      };
+      el.addEventListener("wheel", onWheel);
+      return () => el.removeEventListener("wheel", onWheel);
+    }
+  }, []);
     return (
-
         <div className="history">
             <Header />
-            <ul className="history-list">
+            <ul className="history-list" ref={scrollRef}>
                 {Events}
             </ul>
         </div>
