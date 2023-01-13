@@ -6,9 +6,7 @@ body,
     height: calc(100% - 2rem);
 }
 
-.home {
-    overflow: hidden;
-}
+
 
 .home-body {
     height: calc(98.1% + var(--header-height));
@@ -87,5 +85,8 @@ body,
     }
     .home-panel-gray {
         display: none;
+    }
+    .home {
+        overflow: hidden;
     }
 }
