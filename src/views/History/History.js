@@ -3,6 +3,7 @@ import Header from '../../components/Header/Header';
 import Card from '../../components/Card/Card';
 import events from '../../Data';
 import HorizontalScroll from 'react-scroll-horizontal';
+import MediaQuery from 'react-responsive';
 
 //import all images from years folder
 const importAll = (r) => {
@@ -34,9 +35,14 @@ const History = () => {
         <div className="history">
             <Header />
             <ul className="history-list">
-                <HorizontalScroll>
+                <MediaQuery maxWidth={768}>
                     {Events}
-                </HorizontalScroll>
+                </MediaQuery>
+                <MediaQuery minWidth={768}>
+                    <HorizontalScroll>
+                        {Events}
+                    </HorizontalScroll>
+                </MediaQuery>
             </ul>
         </div>
     )
