@@ -132,6 +132,7 @@
     transform: skewX(0);
     color: white;
     font-size: 6rem;
+    margin: 0 1rem;
 }
 
 
@@ -185,8 +186,9 @@
         display: flex;
         order: 1;
     }
-    .flag,
     .medals {
         order: 2;
+        width: 100%;
+        justify-content: space-evenly;
     }
 }

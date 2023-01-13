@@ -1,6 +1,7 @@
 .flag {
     margin: 0 4rem;
 }
+
 .flag-item {
     display: flex;
     height: 8rem;
@@ -19,10 +20,24 @@
         margin: 0;
         margin-right: auto;
     }
+
     .flag-item {
         height: 10vw;
     }
+
     .flag-item img {
         margin-left: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .flag-item {
+        height: 15vw;
+    }
+
+    .flag {
+        position: absolute;
+        top: 1rem;
+        right: 3rem;
     }
 }

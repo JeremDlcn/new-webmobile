@@ -6,6 +6,9 @@ body,
     height: calc(100% - 2rem);
 }
 
+.home {
+    overflow: hidden;
+}
 
 .home-body {
     height: calc(98.1% + var(--header-height));
@@ -75,6 +78,7 @@ body,
         margin-left: 0;
         width: 100%;
     }
+    .enter .home-panel,
     .home-panel {
         transform: skewX(0deg);
         width: 100%;
