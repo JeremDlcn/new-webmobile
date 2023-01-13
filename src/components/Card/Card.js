@@ -27,7 +27,7 @@ function Card(props) {
                         <p>{props.year}</p>
                     </div>
                     <div className="card-image">
-                        <PlaneCanvas className="test">
+                        <PlaneCanvas>
                             <img src={props.image} alt={props.title} />
                         </PlaneCanvas>
                     </div>

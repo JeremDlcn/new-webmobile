@@ -11,6 +11,17 @@ body,
   background-size: cover;
   height: 100vh;
 }
+.history::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 10rem;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  z-index: 10;
+}
 .history-list {
   display: flex;
   list-style: none;

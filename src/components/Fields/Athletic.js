@@ -4,7 +4,7 @@ import './Fields.css';
 
 const Athletic = (props) => {
     return (
-        <div className="gym">
+        <div className="athletic">
             <h1>Athlétisme</h1>
             <ul className="field athletic-field">
                 <li className="field-item">

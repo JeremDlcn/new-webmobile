@@ -4,7 +4,7 @@ import './Fields.css';
 
 const Pool = (props) => {
     return (
-        <div className="gym">
+        <div className="pool">
             <h1>Natation</h1>
             <ul className="field pool-field">
                 <li className="field-item">
