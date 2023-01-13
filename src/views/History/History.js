@@ -2,7 +2,6 @@ import './History.css';
 import Header from '../../components/Header/Header';
 import Card from '../../components/Card/Card';
 import events from '../../Data';
-import { Curtains } from 'react-curtains';
 
 //import all images from years folder
 const importAll = (r) => {
@@ -31,7 +30,6 @@ const Events = events.map((event) => {
 
 const History = () => {
     return (
-    <Curtains pixelRatio={Math.min(1.5, window.devicePixelRatio)}>
 
         <div className="history">
             <Header />
@@ -39,7 +37,6 @@ const History = () => {
                 {Events}
             </ul>
         </div>
-    </Curtains>
     )
 }
 
