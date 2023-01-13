@@ -3,6 +3,7 @@ import './Card.css';
 import PlaneCanvas from '../Plane/PlaneCanvas';
 import { Curtains } from 'react-curtains';
 import { useState } from 'react';
+import MediaQuery from 'react-responsive';
 
 function Card(props) {
     const [isHover, setIsHover] = useState(false);
@@ -22,19 +23,32 @@ function Card(props) {
     return (
         <div className="card card-bg" style={boxStyle} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <Link to={props.link} className="card-link">
-                <Curtains pixelRatio={Math.min(1.5, window.devicePixelRatio)}>
+                <MediaQuery maxWidth={768}>
                     <div className="card-year">
                         <p>{props.year}</p>
                     </div>
                     <div className="card-image">
-                        <PlaneCanvas>
-                            <img src={props.image} alt={props.title} />
-                        </PlaneCanvas>
+                        <img src={props.image} alt={props.title} />
                     </div>
                     <div className="card-content">
                         <h2 className="card-title">{props.title}</h2>
                     </div>
-                </Curtains>
+                </MediaQuery>
+                <MediaQuery minWidth={768}>
+                    <Curtains pixelRatio={Math.min(1.5, window.devicePixelRatio)}>
+                        <div className="card-year">
+                            <p>{props.year}</p>
+                        </div>
+                        <div className="card-image">
+                            <PlaneCanvas>
+                                <img src={props.image} alt={props.title} />
+                            </PlaneCanvas>
+                        </div>
+                        <div className="card-content">
+                            <h2 className="card-title">{props.title}</h2>
+                        </div>
+                    </Curtains>
+                </MediaQuery>
             </Link>
         </div>
 
